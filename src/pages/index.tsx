@@ -10,6 +10,7 @@ import {
 } from '../styles/components/Widget'
 import GithubCorner from '../styles/components/GithubCorner'
 import Footer from '../styles/components/Footer'
+import Profile from '../styles/components/Profile'
 
 const Home: React.FC = () => {
   return (
@@ -29,6 +30,7 @@ const Home: React.FC = () => {
           </WidgetContent>
         </Widget>
         <Footer />
+        <Profile />
       </QuizContainer>
       <GithubCorner projectUrl="https://github.com/MelkdeSousa" />
     </QuizBackground>
