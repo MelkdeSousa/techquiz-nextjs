@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import assets from '../assets/assets.json'
 
@@ -11,6 +11,8 @@ import Input from '../components/Input'
 import Button from '../components/Button'
 
 const Home: React.FC = () => {
+  const [name, setName] = useState('')
+
   return (
     <QuizBackground backgroundImage={assets.bg}>
       <QuizContainer>
@@ -20,8 +22,10 @@ const Home: React.FC = () => {
           </WidgetHeader>
           <WidgetContent>
             <form>
-              <Input />
-              <Button />
+              <Input onChange={event => setName(event.target.value)} />
+              <Button type="submit" disabled={name.length === 0}>
+                {`Vamos jogar ${name}`}
+              </Button>
             </form>
           </WidgetContent>
         </Widget>
