@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import Logo from './QuizLogo'
+import Logo from './Logo'
 
 const QuizLogo = styled(Logo)`
   margin: auto;
