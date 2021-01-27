@@ -22,7 +22,11 @@ const Home: React.FC = () => {
           </WidgetHeader>
           <WidgetContent>
             <form>
-              <Input onChange={event => setName(event.target.value)} />
+              <Input
+                value={name}
+                placeholder="Seu nickname"
+                onChange={event => setName(event.target.value)}
+              />
               <Button type="submit" disabled={name.length === 0}>
                 {`Vamos jogar ${name}`}
               </Button>
