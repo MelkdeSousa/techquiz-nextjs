@@ -8,6 +8,7 @@ import GithubCorner from '../components/GithubCorner'
 import Footer from '../components/Footer'
 import Profile from '../components/Profile'
 import Input from '../components/Input'
+import Button from '../components/Button'
 
 const Home: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const Home: React.FC = () => {
           <WidgetContent>
             <form>
               <Input />
+              <Button />
             </form>
           </WidgetContent>
         </Widget>
