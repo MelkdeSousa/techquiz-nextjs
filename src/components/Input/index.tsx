@@ -2,10 +2,10 @@ import React from 'react'
 
 import { InputBase } from './styles'
 
-const Input: React.FC = () => {
+const Input: React.FC<React.InputHTMLAttributes<HTMLInputElement>> = props => {
   return (
     <>
-      <InputBase />
+      <InputBase {...props} />
     </>
   )
 }
