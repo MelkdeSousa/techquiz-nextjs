@@ -7,6 +7,7 @@ import { Widget, WidgetHeader, WidgetContent } from '../components/Widget'
 import GithubCorner from '../components/GithubCorner'
 import Footer from '../components/Footer'
 import Profile from '../components/Profile'
+import Input from '../components/Input'
 
 const Home: React.FC = () => {
   return (
@@ -14,10 +15,12 @@ const Home: React.FC = () => {
       <QuizContainer>
         <Widget>
           <WidgetHeader>
-            <h1>Lorem ipsum dolor sit amet </h1>
+            <h1>TechQuiz</h1>
           </WidgetHeader>
           <WidgetContent>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <form>
+              <Input />
+            </form>
           </WidgetContent>
         </Widget>
         <Widget>
