@@ -2,7 +2,9 @@ import React from 'react'
 
 import { ButtonBase } from './styles'
 
-const Button: React.FC<React.HTMLAttributes<HTMLButtonElement>> = props => {
+const Button: React.FC<React.ButtonHTMLAttributes<
+  HTMLButtonElement
+>> = props => {
   return (
     <>
       <ButtonBase {...props} />
