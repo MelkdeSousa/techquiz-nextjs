@@ -9,6 +9,7 @@ import Footer from '../components/Footer'
 import Profile from '../components/Profile'
 import Input from '../components/Input'
 import Button from '../components/Button'
+import QuizLogo from '../components/QuizLogo'
 
 const Home: React.FC = () => {
   const [name, setName] = useState('')
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
   return (
     <QuizBackground backgroundImage={assets.bg}>
       <QuizContainer>
+        <QuizLogo className="" />
         <Widget>
           <WidgetHeader>
             <h1>TechQuiz</h1>
